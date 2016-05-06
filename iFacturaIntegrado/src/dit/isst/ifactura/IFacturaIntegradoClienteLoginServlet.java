@@ -12,7 +12,7 @@ import com.google.appengine.api.users.UserService;
 import com.google.appengine.api.users.UserServiceFactory;
 
 @SuppressWarnings("serial")
-public class IFacturaIntegradoLoginServlet extends HttpServlet {
+public class IFacturaIntegradoClienteLoginServlet extends HttpServlet {
 
 	// CLASE INICIAL
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
@@ -20,6 +20,7 @@ public class IFacturaIntegradoLoginServlet extends HttpServlet {
 		String url = userService.createLoginURL(req.getRequestURI());
 		String urlLinktext = "Login";
 		String user = "";
+
 		if (req.getUserPrincipal() != null) {
 			user = req.getUserPrincipal().getName();
 			url = userService.createLogoutURL(req.getRequestURI());
