@@ -42,4 +42,11 @@ public interface UsuarioClienteDao {
 	 */
 	UsuarioCliente getUsuario(Long idUsuario);
 
+	/**
+	 * Gets the usuario by mail.
+	 *
+	 * @return the usuario by mail
+	 */
+	UsuarioCliente getUsuarioByMail(String usuario);
+
 }

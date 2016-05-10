@@ -75,4 +75,13 @@ public class FacturaTelefonoDaoImpl implements FacturaTelefonoDao {
 		em.close();
 		return facturaReturn;
 	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<FacturaTelefono> getFacturasById(Long idUsuario) {
+		EntityManager em = EMFService.get().createEntityManager();
+		Query query = em.createQuery("select f from FacturaTelefono f where idUsuario = :idUsuario");
+		query.setParameter("idUsuario", idUsuario);
+		return query.getResultList();
+	}
 }

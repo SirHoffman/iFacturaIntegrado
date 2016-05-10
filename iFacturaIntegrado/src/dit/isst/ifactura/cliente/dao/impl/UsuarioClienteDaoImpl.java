@@ -75,4 +75,20 @@ public class UsuarioClienteDaoImpl implements UsuarioClienteDao {
 		return usuarioReturn;
 	}
 
+	@Override
+	public UsuarioCliente getUsuarioByMail(String usuario) {
+		EntityManager em = EMFService.get().createEntityManager();
+		Query query = em.createQuery("select u from UsuarioCliente u where usuario = :usuario");
+		query.setParameter("usuario", usuario);
+		List<UsuarioCliente> usuarios = query.getResultList();
+		UsuarioCliente usuarioReturn = null;
+		if (!usuarios.isEmpty() && usuarios.size() == 1) {
+			usuarioReturn = usuarios.get(0);
+		} else {
+			// Si llega a este punto tenemos un problema
+		}
+		em.close();
+		return usuarioReturn;
+	}
+
 }

@@ -16,6 +16,15 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 		<url-pattern>/ifacturaIntegradoClienteLogin</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>FacturasClienteServlet</servlet-name>
+		<servlet-class>dit.isst.ifactura.cliente.servlets.FacturasClienteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FacturasClienteServlet</servlet-name>
+		<url-pattern>/nuevaFactura</url-pattern>
+	</servlet-mapping>
+
 	<!-- SERVLETS PROVEEDOR -->
 
 	<servlet>

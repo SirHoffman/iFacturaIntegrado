@@ -26,13 +26,13 @@ public class FacturaTelefono implements Serializable {
 	private Date fechaFacturacion;
 
 	/** The datos contradados. */
-	private Float datosContradados;
+	private Float datosContratados;
 
 	/** The datos consumidos. */
 	private Float datosConsumidos;
 
 	/** The voz contradada. */
-	private Float vozContradada;
+	private Float vozContratada;
 
 	/** The voz consumida. */
 	private Float vozConsumida;
@@ -89,8 +89,8 @@ public class FacturaTelefono implements Serializable {
 	 *
 	 * @return the datosContradados
 	 */
-	public Float getDatosContradados() {
-		return datosContradados;
+	public Float getDatosContratados() {
+		return datosContratados;
 	}
 
 	/**
@@ -99,8 +99,8 @@ public class FacturaTelefono implements Serializable {
 	 * @param datosContradados
 	 *            the datosContradados to set
 	 */
-	public void setDatosContradados(Float datosContradados) {
-		this.datosContradados = datosContradados;
+	public void setDatosContratados(Float datosContradados) {
+		this.datosContratados = datosContradados;
 	}
 
 	/**
@@ -127,8 +127,8 @@ public class FacturaTelefono implements Serializable {
 	 *
 	 * @return the vozContradada
 	 */
-	public Float getVozContradada() {
-		return vozContradada;
+	public Float getVozContratada() {
+		return vozContratada;
 	}
 
 	/**
@@ -137,8 +137,8 @@ public class FacturaTelefono implements Serializable {
 	 * @param vozContradada
 	 *            the vozContradada to set
 	 */
-	public void setVozContradada(Float vozContradada) {
-		this.vozContradada = vozContradada;
+	public void setVozContratada(Float vozContradada) {
+		this.vozContratada = vozContradada;
 	}
 
 	/**

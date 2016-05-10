@@ -1,5 +1,7 @@
 package dit.isst.ifactura.cliente.dao;
 
+import java.util.List;
+
 import dit.isst.ifactura.model.FacturaTelefono;
 
 public interface FacturaTelefonoDao {
@@ -38,5 +40,14 @@ public interface FacturaTelefonoDao {
 	 * @return the usuario
 	 */
 	FacturaTelefono getUsuario(Long idFactura);
+
+	/**
+	 * Gets the facturas by id.
+	 *
+	 * @param idUsuario
+	 *            the id usuario
+	 * @return the facturas by id
+	 */
+	List<FacturaTelefono> getFacturasById(Long idUsuario);
 
 }

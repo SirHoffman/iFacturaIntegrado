@@ -24,6 +24,7 @@ public class IFacturaIntegradoProveedorLoginServlet extends HttpServlet {
 		if (req.getUserPrincipal() != null) {
 			user = req.getUserPrincipal().getName();
 			url = userService.createLogoutURL(req.getRequestURI());
+			
 			urlLinktext = "Logout";
 		}
 
